@@ -1,0 +1,13 @@
+{
+	"mqtt": {
+		"host": "arena.andrew.cmu.edu",
+		"port": 1883
+	},
+	"arts": {
+		"realm": "realm",
+		"reg": "realm/proc/reg",
+		"ctl": "realm/proc/control",
+		"dgb": "realm/proc/debug",
+		"rest_url": "https://arena.andrew.cmu.edu/arts-api/v1/"
+	}
+}
