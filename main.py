@@ -42,7 +42,7 @@ def main():
     #    Note: filetype will be inferred from filename extension (.py or .wasm)
     mod = Module("wiselab/boxes", "boxes.py", mod_env=env)
 
-    # we can a module object to a running module, if we know its uuid:
+    # we can create a module object to a running module (for example, to send a delete request), if we know its uuid:
     # mod = Module("wiselab/boxes", "boxes.py", mod_uuid='4264bac8-13ed-453b-b157-49cc2421a112')
     
     # get arts request json string (req_uuid will be used to confirm the request)
@@ -54,17 +54,17 @@ def main():
 
     # TODO: we can check for arts confirmation:
     #  1. subscribe to reg topic (settings['arts']['ctl'])
-    #  2. look for message of type "arts_resp", for the req_uuid we sent 
+    #  2. look for message of type "arts_resp", with the object_id set to the value of req_uuid we saved before
 
-    # we can query arts for modules
+    # we can use arts rest interface to query existing modules
     modulesJson = artsRest.getModules()
     print('** These are all the modules known to ARTS:')
     pp.pprint(modulesJson)
 
-    # and also query for modules of a particular runtime, given its uuid:
+    # query for modules of a particular runtime, given its uuid:
     #  modulesJson = artsRest.getRuntimes('a69e075c-51e5-4555-999c-c49eb283dc1d')
     #
-    # finally, we can query arts for runtimes:
+    # we can alse query arts for runtimes:
     #  runtimesJson = artsRest.getRuntimes()
 
     # wait for user
