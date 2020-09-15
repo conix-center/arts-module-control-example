@@ -64,7 +64,7 @@ def main():
     # query for modules of a particular runtime, given its uuid:
     #  modulesJson = artsRest.getRuntimes('a69e075c-51e5-4555-999c-c49eb283dc1d')
     #
-    # we can alse query arts for runtimes:
+    # we can also query arts for runtimes:
     #  runtimesJson = artsRest.getRuntimes()
 
     # wait for user
