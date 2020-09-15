@@ -1,6 +1,6 @@
 **# ARTS Module Creation Example**
 
-Shows how to send module create/delete requests to the [ARENA Runtime Supervisor](https://github.com/conix-center/arts/).
+Shows how to send module create/delete requests to the [ARENA Runtime Supervisor](https://github.com/conix-center/arts/), and also how to query for existing modules and runtimes.
 
 See [ARTS](https://github.com/conix-center/arts/).
 
