@@ -1,14 +1,14 @@
-**# ARTS Module Creation Example**
+# ARTS Module Creation Example
 
 Shows how to send module create/delete requests to the [ARENA Runtime Supervisor](https://github.com/conix-center/arts/), and also how to query for existing modules and runtimes.
 
 See [ARTS](https://github.com/conix-center/arts/).
 
-**## Dependencies**
+## Dependencies
 
 \- python 3, pip3, virtualenv (and requirements.txt)
 
-**## Quick start**
+## Quick start
 
 Use provided Makefile to install requirements (init) and execute.
 
